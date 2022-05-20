@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RgZFdaHHCC9Aa442oSDXMxYe3HTygiOCLMvZFnHbnhw=",
+  "Source": "BackendAdminAppGateway.Host",
+  "BasePath": "_content/BackendAdminAppGateway.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

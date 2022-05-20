@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LJsj/XLfP/gLCKxX2BDg63qtjMIRFP18SMw28BxCweI=",
+  "Source": "PublicWebSiteGateway.Host",
+  "BasePath": "_content/PublicWebSiteGateway.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

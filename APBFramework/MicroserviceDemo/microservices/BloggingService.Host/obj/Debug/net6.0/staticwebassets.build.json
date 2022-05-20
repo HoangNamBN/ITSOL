@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "o224ceWNI1nRxbcaSxiy8lwvEVXK6xsSdbx0vSO3Vg4=",
+  "Source": "BloggingService.Host",
+  "BasePath": "_content/BloggingService.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BloggingService.Host\\wwwroot",
+      "Source": "BloggingService.Host",
+      "ContentRoot": "D:\\ITSOL\\Learn\\abp-samples\\MicroserviceDemo\\microservices\\BloggingService.Host\\wwwroot\\",
+      "BasePath": "_content/BloggingService.Host",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\ITSOL\\Learn\\abp-samples\\MicroserviceDemo\\microservices\\BloggingService.Host\\wwwroot\\files\\100d4c0445cbf55f687339ec8e656abb.jpg",
+      "SourceId": "BloggingService.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ITSOL\\Learn\\abp-samples\\MicroserviceDemo\\microservices\\BloggingService.Host\\wwwroot\\",
+      "BasePath": "_content/BloggingService.Host",
+      "RelativePath": "files/100d4c0445cbf55f687339ec8e656abb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\100d4c0445cbf55f687339ec8e656abb.jpg"
+    },
+    {
+      "Identity": "D:\\ITSOL\\Learn\\abp-samples\\MicroserviceDemo\\microservices\\BloggingService.Host\\wwwroot\\files\\6b32831845a8807aa8b839ed0f28182c.jpg",
+      "SourceId": "BloggingService.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ITSOL\\Learn\\abp-samples\\MicroserviceDemo\\microservices\\BloggingService.Host\\wwwroot\\",
+      "BasePath": "_content/BloggingService.Host",
+      "RelativePath": "files/6b32831845a8807aa8b839ed0f28182c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\6b32831845a8807aa8b839ed0f28182c.jpg"
+    }
+  ]
+}

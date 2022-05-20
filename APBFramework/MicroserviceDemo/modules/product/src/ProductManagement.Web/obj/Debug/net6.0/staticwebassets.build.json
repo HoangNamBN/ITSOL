@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rtsqrwI7KU1OQFRx6xM7NgYLjvJVEIgftTHgZpdeizg=",
+  "Source": "ProductManagement.Web",
+  "BasePath": "_content/ProductManagement.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

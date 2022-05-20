@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VHugi0L2eKr+89u+MVLMXg+paHT1pmQJ/+NT6XB1wlM=",
+  "Source": "IdentityService.Host",
+  "BasePath": "_content/IdentityService.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
