@@ -1,0 +1,15 @@
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\bin\Debug\net6.0\DemoLINQ.exe
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\bin\Debug\net6.0\DemoLINQ.deps.json
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\bin\Debug\net6.0\DemoLINQ.runtimeconfig.json
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\bin\Debug\net6.0\DemoLINQ.dll
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\bin\Debug\net6.0\DemoLINQ.pdb
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.csproj.AssemblyReference.cache
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.AssemblyInfoInputs.cache
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.AssemblyInfo.cs
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.csproj.CoreCompileInputs.cache
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.dll
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\refint\DemoLINQ.dll
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.pdb
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\DemoLINQ.genruntimeconfig.cache
+D:\ITSOL\LINQ\DemoLINQ\DemoLINQ\obj\Debug\net6.0\ref\DemoLINQ.dll
