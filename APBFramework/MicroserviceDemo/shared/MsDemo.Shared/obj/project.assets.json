@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+      "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
       "projectName": "MsDemo.Shared",
-      "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+      "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
       "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
+      "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",

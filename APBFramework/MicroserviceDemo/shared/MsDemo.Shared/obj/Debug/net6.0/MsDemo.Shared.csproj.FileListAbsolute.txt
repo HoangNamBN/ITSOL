@@ -22,3 +22,15 @@ C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\refint\MsDemo.Shared.dll
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.pdb
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\ref\MsDemo.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.deps.json
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.pdb
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.csproj.AssemblyReference.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.AssemblyInfoInputs.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.AssemblyInfo.cs
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.csproj.CoreCompileInputs.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\refint\MsDemo.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.pdb
+D:\ITSOL\APBFramework\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net6.0\ref\MsDemo.Shared.dll

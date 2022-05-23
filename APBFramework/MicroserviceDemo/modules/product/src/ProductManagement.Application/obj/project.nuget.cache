@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t0Ol5beLjggjbJZY9HzhUtN4T/0XdcuJiQgGQu+4EHh9QkZn1kI6Dqb8aYXe/VlcCUxLd2OcuEE+pxHaCsk9rg==",
+  "dgSpecHash": "qZEo4dIppQnTc31p7/NIriKf+jP3Nhq1lqLfdAM4RIpTvAxQchP4cD3XrtpNLBNeNEqW1nOLZD1Axnf6afieVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512",

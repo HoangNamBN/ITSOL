@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj": {}
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj": {
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
         "projectName": "PublicWebSiteGateway.Host",
-        "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
+        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\obj\\",
+        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
-                "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
+              "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
+                "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
               },
-              "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
-                "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
+              "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+                "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
               }
             }
           }
@@ -127,14 +127,14 @@
         }
       }
     },
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
         "projectName": "ProductManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
+        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\obj\\",
+        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -151,8 +151,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
-                "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj"
+              "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
+                "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj"
               }
             }
           }
@@ -192,14 +192,14 @@
         }
       }
     },
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
         "projectName": "ProductManagement.Domain.Shared",
-        "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
+        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\obj\\",
+        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -257,14 +257,14 @@
         }
       }
     },
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
         "projectName": "ProductManagement.HttpApi",
-        "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
+        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\obj\\",
+        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -281,8 +281,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
+              "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -321,14 +321,14 @@
         }
       }
     },
-    "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
         "projectName": "MsDemo.Shared",
-        "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
+        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",

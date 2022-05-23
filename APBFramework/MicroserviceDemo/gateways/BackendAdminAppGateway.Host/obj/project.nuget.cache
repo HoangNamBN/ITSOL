@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gp01jAk3+g/NKSnqVFHtCI120VUn6pC2t/3J+ybucqF4Zyto7Z1xT724QULzb93MpktWhP0F1mHeO/v/vD4oIA==",
+  "dgSpecHash": "KB9hYcXCJnp6EJq8AhZX5rQZV2CJBuHYcZQU2uxD5odhTV3g9VN1S5vX8IksfacYYa37MaKNrCVjeBD2v4pHKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\BackendAdminAppGateway.Host\\BackendAdminAppGateway.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\BackendAdminAppGateway.Host\\BackendAdminAppGateway.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

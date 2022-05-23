@@ -41,10 +41,8 @@ namespace demolinq
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Product p = new Product(1, "Abc", 1000, new string[] { "Xanh", "Do" }, 3);
-            Console.WriteLine(p);
-            Console.ReadKey();
+            // tạo ra danh sách nhãn hàng mẫu 
+            var brands = 
         }
     }
 }

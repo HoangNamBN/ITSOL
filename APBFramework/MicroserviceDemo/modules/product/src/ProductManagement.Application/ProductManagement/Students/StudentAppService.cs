@@ -1,84 +1,4 @@
-﻿
-#region
-//using ProductManagement.Classes;
-//using System;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using Volo.Abp.Application.Dtos;
-//using Volo.Abp.Application.Services;
-//using Volo.Abp.Domain.Entities;
-//using Volo.Abp.Domain.Repositories;
-//using System.Linq.Dynamic.Core;
-
-//namespace ProductManagement.Students
-//{
-//    public class StudentAppService : CrudAppService<Student, StudentDto, Guid,
-//        PagedAndSortedResultRequestDto, CreateUpdateSudentDto>, IStudentAppService
-//    {
-//        private readonly IRepository<Class, Guid> _classRepository;
-
-//       public StudentAppService(IRepository<Student, Guid> studentRepository,
-//           IRepository<Class, Guid> classRepository) : base(studentRepository)
-//        {
-//            _classRepository = classRepository;
-//            GetPolicyName = ProductManagementPermissions.Products.Default;
-//            GetListPolicyName = ProductManagementPermissions.Products.Default;
-//            CreatePolicyName = ProductManagementPermissions.Products.Create;
-//            UpdatePolicyName = ProductManagementPermissions.Products.Update;
-//            DeletePolicyName = ProductManagementPermissions.Products.Delete;
-//        }
-
-//        //public override async Task<StudentDto> GetAsync(Guid id)
-//        //{
-//        //    var queryable = await Repository.GetQueryableAsync();
-
-//        //    var query = from PmStudents in queryable
-//        //                join PmClasses in await _classRepository.GetQueryableAsync() on PmStudents.ClassId equals PmClasses.Id
-//        //                where PmStudents.Id == id
-//        //                select new { PmStudents, PmClasses };
-//        //    var queryResult = await AsyncExecuter.FirstOrDefaultAsync(query);
-//        //    if(queryResult == null)
-//        //    {
-//        //        throw new EntityNotFoundException(typeof(Student), id);
-//        //    }
-
-//        //    var studentDto = ObjectMapper.Map<Student, StudentDto>(queryResult.PmStudents);
-//        //    studentDto.ClassName = queryResult.PmClasses.ClassName;
-//        //    return studentDto;
-//        //}
-
-
-//        //public override async Task<PagedResultDto<StudentDto>> GetListAsync(PagedAndSortedResultRequestDto input)
-//        //{
-//        //    var queryable = await Repository.GetQueryableAsync();
-
-//        //    var query = from PmStudents in queryable
-//        //                join PmClasses in await _classRepository.GetQueryableAsync() on PmStudents.ClassId equals PmClasses.Id
-//        //                select new { PmStudents, PmClasses };
-
-//        //    query = query.OrderBy(input.Sorting ?? "Name")
-//        //        .Skip(input.SkipCount)
-//        //        .Take(input.MaxResultCount);
-
-//        //    var queryResult = await AsyncExecuter.ToListAsync(query);
-
-//        //    var studentDtos = queryResult.Select(x =>
-//        //    {
-//        //        var studentDto = ObjectMapper.Map<Student, StudentDto>(x.PmStudents);
-//        //        studentDto.ClassName = x.PmClasses.ClassName;
-//        //        return studentDto;
-//        //    }).ToList();
-
-//        //    var totalCount = await Repository.GetCountAsync();
-
-
-//        //    return new PagedResultDto<StudentDto>(totalCount, studentDtos);
-//        //}
-//    }
-//}
-#endregion
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ProductManagement.Students;
 using System;
 using System.Collections.Generic;
@@ -123,22 +43,22 @@ namespace ProductManagement.Classes
             }
         }
 
-        //public async Task<PagedResultDto<StudentDto>> GetListPagedAsync(PagedAndSortedResultRequestDto input)
-        //{
-        //    await NormalizeMaxResultCountAsync(input);
+        /* public async Task<PagedResultDto<StudentDto>> GetListPagedAsync(PagedAndSortedResultRequestDto input)
+        {
+            await NormalizeMaxResultCountAsync(input);
 
-        //    var students = await(await _studentRepository.GetQueryableAsync())
-        //        .OrderBy(input.Sorting ?? "Name")
-        //        .Skip(input.SkipCount)
-        //        .Take(input.MaxResultCount)
-        //        .ToListAsync();
+            var students = await (await _studentRepository.GetQueryableAsync())
+                .OrderBy(input.Sorting ?? "Name")
+                .Skip(input.SkipCount)
+                .Take(input.MaxResultCount)
+                .ToListAsync();
 
-        //    var totalCount = await _studentRepository.GetCountAsync();
+            var totalCount = await _studentRepository.GetCountAsync();
 
-        //    var dtos = ObjectMapper.Map<List<Student>, List<StudentDto>>(students);
+            var dtos = ObjectMapper.Map<List<Student>, List<StudentDto>>(students);
 
-        //    return new PagedResultDto<StudentDto>(totalCount, dtos);
-        //}
+            return new PagedResultDto<StudentDto>(totalCount, dtos);
+        } */
 
         public async Task<ListResultDto<StudentDto>> GetListAsync()
         {
@@ -149,12 +69,12 @@ namespace ProductManagement.Classes
             return new ListResultDto<StudentDto>(studentsList);
         }
 
-        //public async Task<StudentDto> GetAsync(Guid id)
-        //{
-        //    var classes = await _studentRepository.GetAsync(id);
+        /* public async Task<StudentDto> GetAsync(Guid id)
+        {
+            var classes = await _studentRepository.GetAsync(id);
 
-        //    return ObjectMapper.Map<Student, StudentDto>(classes);
-        //}
+            return ObjectMapper.Map<Student, StudentDto>(classes);
+        }*/
 
         public async Task<StudentDto> CreateAsync(CreateUpdateSudentDto input)
         {
@@ -176,6 +96,7 @@ namespace ProductManagement.Classes
             return ObjectMapper.Map<Student, StudentDto>(students);
         }
 
+        // using IQueryable
         public async Task<StudentDto> GetAsync(Guid id)
         {
             var queryable = await _studentRepository.GetQueryableAsync();

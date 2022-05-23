@@ -8,17 +8,17 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuthServer.Host
 build_property.RootNamespace = AuthServer.Host
-build_property.ProjectDir = C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\applications\AuthServer.Host\
+build_property.ProjectDir = D:\ITSOL\APBFramework\MicroserviceDemo\applications\AuthServer.Host\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\applications\AuthServer.Host
+build_property.MSBuildProjectDirectory = D:\ITSOL\APBFramework\MicroserviceDemo\applications\AuthServer.Host
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/applications/AuthServer.Host/Pages/Index.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/applications/AuthServer.Host/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/applications/AuthServer.Host/Pages/_ViewImports.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/applications/AuthServer.Host/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

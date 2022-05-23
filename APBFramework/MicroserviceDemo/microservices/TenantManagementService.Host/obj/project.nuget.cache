@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3wQrnwvmCayxU17L4uxPUs6y0myifn2dUHcF+h8jy6hqvBxC0oxyL5+mIi1Ei5e1/O2jscYjam2PH1DqnueL8Q==",
+  "dgSpecHash": "+Q9BSVQT792251zjm05c8mB2t9BrSgj654ZryKYu6MnYQgMIdVSYPLLXHuRq6lB36vzoVyM5alZ0nmZdJenu+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

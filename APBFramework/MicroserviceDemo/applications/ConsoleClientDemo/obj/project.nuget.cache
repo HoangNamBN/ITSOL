@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HN+81ywKR6g1+EfmBVJ9eaSFfexuqPtvBQ9syGElsL9KWvX4I6pVL2z05iMvBcs9K/0+X2WTdMqwAAqOXqzI8w==",
+  "dgSpecHash": "jGXjuYkmRnax+hGtYM0Z5ZkwyAtF64MQh4u+P9peQbgeg4UCOC2s6E9UyReH35jkNbGMkmPLI8hcZPpZtIBC1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\applications\\ConsoleClientDemo\\ConsoleClientDemo.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\applications\\ConsoleClientDemo\\ConsoleClientDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

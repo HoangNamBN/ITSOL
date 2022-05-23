@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cd1MM/YHoO2MqZ1WwL0gjelr+h8/MGnr2e3pqFmij604z0bv0PhDkYxNdhbiljqBBIiDe49dVLXB3fZlS88stQ==",
+  "dgSpecHash": "ZQBWw4Acy6sBduTos2ITef6ykkGUGLYddUFjT6Ql9sVX9/aRygNTRhOMqP7noswCcwR1ru9/nK+eHbYMYxV3XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

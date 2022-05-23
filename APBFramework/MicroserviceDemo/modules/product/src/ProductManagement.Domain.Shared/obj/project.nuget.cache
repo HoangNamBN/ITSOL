@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "utxlERM5h0QWfUmDShtT9L6n495S6yNqX85PiF4NTS2UxmF28N98Wp9m7aReYDSKUVsTlpQ2wtMKgia/0IhbKw==",
+  "dgSpecHash": "phXmHGpcmD48qQRjzeAwwFWVLnxBSa9MtLb2yK1uOlxr3dtryEy+lMaFObowCZoO8R3BUrguRerxhLiOW3vx8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

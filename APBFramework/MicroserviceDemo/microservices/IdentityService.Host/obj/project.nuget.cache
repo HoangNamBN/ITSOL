@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TVZ4voFmnl2S75V0CIhP4YQ3X3z+Cmz1ipYlXIKhQSlKwUFsXNC8ZIb+cDm2KxLaT4lScOXmhhlQh9wEMRWT5Q==",
+  "dgSpecHash": "+nFFEXg8ToW5p0sH9igYanyXvtQ4feB0P8W5Ayxf9FtajQpCG/Kebq8QMpTk78vH/GukkN/XSy8oBhnZ/0EfxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

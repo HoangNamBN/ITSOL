@@ -4549,11 +4549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
+      "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
       "projectName": "ProductManagement.Application",
-      "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
+      "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj",
       "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\obj\\",
+      "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4570,11 +4570,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
-              "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
+            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
             },
-            "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {
-              "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj"
+            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {
+              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj"
             }
           }
         }

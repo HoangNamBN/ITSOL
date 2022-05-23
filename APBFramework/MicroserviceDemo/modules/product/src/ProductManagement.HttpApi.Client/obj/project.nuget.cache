@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iI5/AcMrkuW7HoOhMHY6g6wH+xyIrTmDSVp3dKe/jVwJ5fKJ2A4Mnyg9ByNOHI0xlUDUFw5jN62KWDV7fkQvnw==",
+  "dgSpecHash": "dKt8LnDJeW7WsFO7A2s/roD6ZAUIOzSqYgktW/LnSCrc6gvO3i/hBuWAgeGzlCfq792ClytdhPCCyB7QAAsfJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\castle.core.asyncinterceptor\\2.0.0\\castle.core.asyncinterceptor.2.0.0.nupkg.sha512",

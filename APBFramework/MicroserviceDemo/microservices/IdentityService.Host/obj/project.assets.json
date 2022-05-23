@@ -12218,11 +12218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
+      "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
       "projectName": "IdentityService.Host",
-      "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
+      "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
       "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\obj\\",
+      "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12239,8 +12239,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
-              "projectPath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
+            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
             }
           }
         }

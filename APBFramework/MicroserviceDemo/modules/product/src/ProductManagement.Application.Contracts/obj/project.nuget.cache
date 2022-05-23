@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MRuTsGThldqwI11/4f6WAZra2tJFpBMZ4+sa/u3BkbOe9N30kK+YLv9EqdNK25tURfGjYsrzN8WmuZYr3Zc7qg==",
+  "dgSpecHash": "iWAFP8yHlspjNda8v6Y/j3lkroqGdLRQg/RR26jFxf/QdgMQ5HzVMpiKB9ASBu/TymK7EIVdm1/tnn0a+3mYPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NamBN\\Desktop\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
+  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",

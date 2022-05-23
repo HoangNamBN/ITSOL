@@ -18,3 +18,13 @@ C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\P
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
 C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.deps.json
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.AssemblyReference.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfoInputs.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfo.cs
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb

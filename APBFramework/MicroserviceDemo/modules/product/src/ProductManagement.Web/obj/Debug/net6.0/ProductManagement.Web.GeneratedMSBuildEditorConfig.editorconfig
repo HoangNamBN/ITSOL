@@ -8,25 +8,25 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProductManagement
 build_property.RootNamespace = ProductManagement
-build_property.ProjectDir = C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Web\
+build_property.ProjectDir = D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\NamBN\Desktop\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Web
+build_property.MSBuildProjectDirectory = D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Create.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdE1hbmFnZW1lbnRcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Edit.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdE1hbmFnZW1lbnRcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Index.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdE1hbmFnZW1lbnRcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NamBN/Desktop/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/_ViewImports.cshtml]
+[D:/ITSOL/APBFramework/MicroserviceDemo/modules/product/src/ProductManagement.Web/Pages/ProductManagement/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdE1hbmFnZW1lbnRcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
