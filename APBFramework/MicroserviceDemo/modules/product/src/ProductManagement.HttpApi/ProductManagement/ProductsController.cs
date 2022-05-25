@@ -58,5 +58,12 @@ namespace ProductManagement
         {
             return _productAppService.DeleteAsync(id);
         }
+
+        [HttpPut]
+        [Route("update/{id}")]
+        public Task ChangeStockCountAsync(Guid id, int newCount)
+        {
+            return _productAppService.ChangeStockCountAsync(id, newCount);
+        }
     }
 }

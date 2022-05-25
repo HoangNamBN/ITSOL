@@ -4258,6 +4258,34 @@
         "runtime": {
           "bin/placeholder/MsDemo.Shared.dll": {}
         }
+      },
+      "ProductManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ProductManagement.Domain.Shared": "1.0.0",
+          "Volo.Abp.Ddd.Application": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductManagement.Application.Contracts.dll": {}
+        }
+      },
+      "ProductManagement.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Volo.Abp.Ddd.Domain": "5.0.0",
+          "Volo.Abp.Localization": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductManagement.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductManagement.Domain.Shared.dll": {}
+        }
       }
     }
   },
@@ -12187,6 +12215,16 @@
       "type": "project",
       "path": "../../shared/MsDemo.Shared/MsDemo.Shared.csproj",
       "msbuildProject": "../../shared/MsDemo.Shared/MsDemo.Shared.csproj"
+    },
+    "ProductManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../modules/product/src/ProductManagement.Application.Contracts/ProductManagement.Application.Contracts.csproj",
+      "msbuildProject": "../../modules/product/src/ProductManagement.Application.Contracts/ProductManagement.Application.Contracts.csproj"
+    },
+    "ProductManagement.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../modules/product/src/ProductManagement.Domain.Shared/ProductManagement.Domain.Shared.csproj",
+      "msbuildProject": "../../modules/product/src/ProductManagement.Domain.Shared/ProductManagement.Domain.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12195,6 +12233,7 @@
       "Microsoft.AspNetCore.DataProtection.StackExchangeRedis >= 6.0.0",
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 6.0.0",
       "MsDemo.Shared >= 1.0.0",
+      "ProductManagement.Application.Contracts >= 1.0.0",
       "Serilog.AspNetCore >= 4.1.0",
       "Serilog.Sinks.Elasticsearch >= 8.1.0",
       "Serilog.Sinks.File >= 4.1.0",
@@ -12239,6 +12278,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
+            },
             "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
               "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
             }

@@ -1,0 +1,263 @@
+1, TÌM HI?U SOLUTION MICROSERVICEDEMO
+- Trong th? m?c applications
+- AuthService.Host: dùng ?? xác th?c các d?ch v? cu th? là xác th?c ??ng nh?p.
+	?	BackendAdminApp.Host: ?ng d?ng qu?n tr? l?u tr? giao di?n cho ng??i dùng cho 			modules Product, Identity
+	?	ConsoleClientDemo: 
+	?	PublicWebsie.Host: là 1 trang web ch?a danh sách s?n ph?m và giao di?n ng??i dùng.
+	?	Class:
+	?	Trong th? m?c Gateways/BFFs (x? lý backend cho fontend)
+	?	BackendAdminAppGateway: x? lý cho BackendAdminApp.Host
+	?	PublicWebSiteGateway.Host: x? lý cho PublicWebsite.Host
+	?	InternalGateway.Host: dùng ?? x? lý giao ti?p gi?a các d?ch v? microservices. 
+	?	Trong th? m?c Microservices
+	?	IdentityService.Host: s? d?ng dùng ?? qu?n lý ng??i dùng và role, l?u tr? api cho modules Identity
+	?	TenantMângementService.Host: dùng ?? qu?n lý Role, l?u tr? API cho module qu?n lý ng??i thuê.
+	?	BloggingService.Host: dùng ?? qu?n lý blog và bài ??ng, l?u tr? API cho module vi?t blog.
+	?	ProductService.Host: dùng ?? qu?n lý s?n ph?m, nó c?ng có tác d?ng ?? t?o, c?p nh?t d? li?u qu?n lý s?n ph?m.
+	?	Trong th? m?c Modules
+	?	Xác ??nh bài toán.
+	?	??u tiên, t?o các h?ng s?, num, … ?? dùng chung t?i Domain.Share 
+		+ CustomerContacts (ch?a các h?ng s?).
+		+ ProductManagentDomainErrorCodes (?? s?a l?i các exception)
+		+ ProductManagementDomainShareModulde (?? config c?u nh? ??t ti?ng anh là m?c ??nh)
+	?	Sau ?ó, t?o ra các th?c th?, domain service, … t?i Domain
+		+ Product.cs: t?o ra th?c th? Product (ch?a các thu?c tính, hàm set, contructor, …) k? th?a l?p AuditedAggregateRoot<Guid> v?i Guid là khóa chính c?a c?a th?c th?.
+		+ ProductManagement: k? th?a DomainSerivce (tr? v? th?c th? ho?c ki?u giá tr?).
+		+ ProductManagementDomainModule.cs: config
+		+ ProductManagementConsts.cs: ch?a h?ng s? dùng chung
+		+ ProductCodeAlreadyExistsException.cs: k? th?a BusinessException ch?ng t? Product ?ã t?n t?i.
+	?	Sau ?ó, t?o ra s? d?ng EntityFrameworkCore ch?a DBContext, Class c?u hình liên quan ??n EF
+		+ IProductManagementDBContext: interface k? th?a IefCoreDbContext ch?a DbSet<Product> Products {get;} ?? không ti?t l? thông tin Product.
+		+ ProductManagementDBContext: k? th?a AbpDbContext<ProductManagementDbContext>, IpoductManagementDbContext khai báo các b?ng d? li?u và c?u hình thêm OnModelCreating
+		+ ProductManagementEntityFrameworkCoreModule: t?o c?u hình cho phép t? ??ng l?u tr? các th?c th?.
+		+ ProductManagementDbContextModelCreateExtensions: thêm ánh x? th?c th? v?i c? s? d? li?u s? d?ng buider.Entity, set các Fluent Api nh? tên b?ng using toTable, thi?t l?p chi?u dài max, ?ánh index, … 
+	?	Sau ?ó, t?o ra các ??i t??ng truy?n d? li?u (dto), ch?a các interface c?n tri?n khai, xác ??nh quy?n, … t?i Application.Contracts
+		+ CreateUpdateCustomerDto: class ch?a các thu?c tính c?a Product c?n ???c l?y thông tin khi t?o ho?c update.
+		+ CustomerDto: t?o ra th?c th? Dto ch?a các bi?n c?n thi?t, k? th?a AuditedEntityDto<Guid>
+		+ IcustomerAppService.cs: interface ch?a các ph??ng th?c c?n ???c tri?n khai (th??ng có h?u t? Async ? cu?i), ??nh ngh?a chung CRUD nh? GetAsync, …
+		+ IPublicProductAppService.cs: interface ch?a ph??ng th?c mà ai c?ng có th? dùng ???c (có th? có ho?c không)
+		+ ProductManagementPermissions.cs: Xác ??nh quy?n
+		+ ProductManagementPermissionDefinitionProvider: ??nh ngh?a quy?n, thêm các nhóm quy?n.
+		+ PriductManagementSettings.cs: khai báo các h?ng s? nhu là MaxPagesSize (kích th??c t?i ?a ?? phân trang).
+	?	Sau ?ó, sang Application ?? tri?n khai các ph??ng th?c trong Application.Contracts
+		+ ProductAppService.cs: tri?n khai các ph??ng th?c (k? th?a t? ApplicationService, IproductAppService. Khai báo ProductManagement v?i Irepository<Product, Guid>
+		+ ProductManagementApplicationModule.cs: c?u hình
+		+ ProductManagementApplicationAutoMapperProfile.cs: s? d?ng autoMapper ?? ánh x? Product thành các ProductDto.
+	?	Sau ?ó vi?t HttpApi.Client: cho phép s? d?ng tr?c ti?p HTTP Api t? xa.
+	?	Sau ?ó vi?t HttpApi: th?c hi?n vi?c ?i?u khi?n (?i?u h??ng)
+		+ CustomerController: th?c hi?n các ?i?u khi?n 
+		
+2, X? LÝ CÁC ERROR G?P PH?I
+	?	N?u g?p l?i An error occurred while saving the entity changes. See the inner exception for details thì xem l?i cách ??t tên thu?c tính và các hàm Set giá tr? (??t tên thu?c tính th?c th? thì nên ??t vi?t hoa ví d? Code, còn khi t?o ra hàm kh?i t?o thì nên ??t code ?? d? phân bi?t)  Hình nh? là l?i 500
+	?	N?u g?p l?i 400 thì xóa cookies ?i.
+
+
+3, CÔNG VI?C LÀM ONLINE NGÀY 18/05/2022
+	?	Test các api xem có l?i hay không  ?ã ch?y ???c h?t.
+	?	??c l?i doc.
+
+4, TÌM HI?U ENTITY FRAMEWORK, MICROSERVICE NGÀY 19/05/2022
+	?	Tìm hi?u v? Entity Framework
+	?	H? tr? t??ng tác gi?a các ?ng d?ng v?i c? s? d? li?u liên quan (ánh x? gi?a các ??i t??ng trong ?ng d?ng, ph?n m?m c?a m?t c? s? d? li?u).
+	?	C?u trúc c?a Entity Framework
+	?	EDM (Entity Data Model) trong ?ó:
+	?	Conceptual Model
+	?	Mapping
+	?	Storage Model
+	?	LINQ: là ngôn ng? dùng ?? truy v?n object model.
+	?	Entity SQL: c?ng là ngôn ng? truy v?n.
+	?	Object Service: th?c hi?n chuy?n ??i d? li?u tr? v? t? entity client data provider t?i 1 entity object structure.
+	?	Entity Client Data Provider: truy v?n Entity SQL vào m?t truy v?n SQL.
+	?	ADO.Net Data Provider: th?c hi?n giao ti?p v?i CSDL b?ng chu?n ADO.Net
+
+5, TÌM HI?M V? MICROSERVICE
+	?	MicroService: cho phép t?o ra các module nh? mà m?i module có th? ch?a CSDL, Api, service, … hi?u m?t cách ??n gi?n thì MicroService là m?t ki?n trúc ph?n m?m mà trong ?ó các module s? ???c chia thành các service nh?, m?i service này s? ???c ??t trên m?t server riêng và giao ti?p v?i nhau thông qua giao th?c HTTP.
+	?	T?i sao ph?i s? d?ng MicroService: 
+		+ chính là do vi?c chia thành các service nh?, m?i service l?i ???c ??t trên m?t server riêng khi ?ó vi?c nâng c?p, scale up, scale down c?ng tr? lên d? dàng h?n.
+		+ 1 service b? l?i thì nó s? c?ng không ?nh h??ng ??n toàn b? h? th?ng.
+		+ service tách bi?t nhau, nên chúng có th? s? d?ng các ngôn ng? l?p trình riêng, ví d? nh? service x? lý ?nh thì có th? vi?t b?ng c++, service t?ng h?p data thì có th? vi?t b?ng python.
+	?	Ki?n trúc c?a MicroService:
+		+ Process: x? lý
+		+ Database
+		+ Request (client/server model)
+	?	M?t ví d?: 1 h? th?ng bán hàng d?a trên Microservices thì gi? s? 1 ??n hàng ???c mô t? thông tin nh? sau: “Hôm nay có m?t nhân viên A t?o ra m?t ??n hàng B t?i c?a hàng C và xu?t t? kho D” thì s? c?n t?i thi?u là 4 Service v?i database ??c l?p.
+		+ Employee service (table tc_employee)
+		+ Store service (table tc_store)
+		+ Inventory service (table tc_warehouse)
+		+ Order service (table tc_order) trong ?ó b?ng d? li?u này ch? ch?a các khóa ngo?i là id nhân viên, id c?a hàng, id nhà kho
+	?	T? t?o ra 1 Project using Microservice
+		+ B??c 1: Cài ??t ABP CLI b?ng l?nh “dotnet tool install -g Volo.Abp.Cli”. N?u ?ã cài r?i mà mu?n c?p nh?t thì s? d?ng l?nh “dotnet tool update -g Volo.Abp.Cli”
+		+ B??c 2: T?o 1 d? án m?i s? d?ng mã l?nh “abp new (tên d? án) ? ?ây tên d? án có th? là BookStore, Acme.BookStore, …
+		
+ 
+	Trong ?ó m?i ph?n s? có m?t ch?c n?ng, nhi?m v? khác nhau.
+	B?t ??u code Project:
+	?	T?o c? s? d? li?u (? ?ây s? thay ??i chu?i k?t n?i)
+	?	Trong th? m?c BookStore.DbMigrator vào file apppsettings.json thay ??i chu?i k?t n?i phù h?p v?i c?u hình máy c?ng nh? username, password c?a SQL Server (? ?ây thay ??i c? trong BookStore.Web)
+	?	T?o d? li?u ban ??u b?ng cách ??t BookStore.DbMigrator b?ng “Set as StartUp Project” ch?y Project.
+	?	T?o m?i m?t th?c th? Book t?i BookStore.Domain (n?i ch?a các th?c th?, domain service,…) ? ?ây Book s? k? th?a AggregateRoot ?? có th? truy v?n và làm vi?c tr?c ti?p v?i th?c th? và v?i tham s? Guid ???c truy?n vào th? hi?n khóa chính c?a th?c th? Book.
+	?	Th?c th? Book s? s? d?ng BookType nên t?o ra 1 file BookType t?i BookStore.Domain.Share (n?i ch?a các h?ng s?, enums, …)
+	?	Sau ?ó thêm th?c th? Book vào DbContext t?i BookStore.EntityFrameworkCore b?ng câu l?nh public DbSet<Book> Books {get; set;}
+	?	T?o 1 file BookStoreDbContextModelCreatingExtensions.cs ?? ánh x? th?c th? Book v?i b?ng c? s? d? li?u.
+	?	Add Migration: ch?p ?nh c? s? d? li?u t?i th?i ?i?m ?ó khi ?ó trong Migrations c?a BookStore.EntityFrameworkCore s? ???c t?o thêm 3 th? m?c
+	?	N?u mu?n t?o ra d? li?u ban ??u cho th?c th? thì t?o d? li?u t?i th? m?c IdentityServer (BookStoreDataSeederContributor) Sau ?ó c?p nh?t c? s? d? li?u b?ng cách ch?y BookStore.DbMigrator  khi ?ó d? li?u ?ã ???c c?p nh?t.
+	?	T?i BookStore.Domain t?o ra 1 file BookManager cho phép t?o ra 1 Book m?i 
+	?	T?o App Service  s? ???c chia thành 2 m?c BookStore.Application (ch?a các dto, application service interfaces) và Application.Contracts (tri?n khai các interface t? BookStore.Application)
+	?	Khi t?o 1 BookDto thì khi tr? Book v? l?p trình bày thì c?n ph?i ánh x? Book thành BookDto b?ng cách s? d?ng AutoMapper ?? có th? t? chuy?n ??i nó n?m trong BookStoreApplicationAutoMapperProfile trong BookStore.Application và ?? tr? v? thông tin c?a Book thì t?o ra m?t class CreateUpdateBookDto trong Application.Contracts
+	?	Sau ?ó t?o ra interface IbookAppService t?i BookStore.Application.Contracts và tri?n khai nó ? BookStore.Application
+
+
+6, TÌM HI?U Database Relationship
+	?	Database Relationship: t?c là m?i quan h? gi?a các b?ng v?i nhau và ???c s? d?ng các câu l?nh n?i ?? truy xu?t d? li?u.
+	?	Các m?i quan h? bao g?m:
+		+ 1 – 1: 1 s?n ph?m thì ch? có 1 h??ng d?n s? d?ng s?n ph?m.
+		+ 1 – n: ví d? 1 danh m?c s?n ph?m g?m nhi?u s?n ph?m (có 2 b?ng m?i b?ng có 1 id và id c?a b?ng này s? là khóa ngo?i c?a b?ng kia)
+		+ n – n: ví d? 1 s?n ph?m có th? n?m trong nhi?u ??n hàng, ??n hàng thì có nhi?u s?n ph?m (t?c là s? có 3 b?ng ??n hàng, s?n ph?m và chi ti?t s?n ph?m).
+	?	Thi?t k? database:
+		+ Table Sinhvien (mã sinh viên, h? tên sv, gi?i tính, ngày sinh, n?i sinh, ??a ch?, mã h?p h?c).
+		+ Table LopHoc (mã l?p h?c, tên l?p h?c).
+		M?i quan h? gi?a 2 b?ng: 1 sinh viên thì có 1 l?p h?c, 1 l?p h?c có nhi?u sinh viên.
+		
+7, Tìm hi?u v? LINQ, IEnumerable, IQueryable
+	LINQ
+		?	LINQ: ngôn ng? truy v?n tích h?p t?c là tích h?p cú pháp truy v?n g?n gi?ng v?i sql vào ngôn ng? c#, ngoài ra nó còn có th? truy c?p v?i các ngu?n d? li?u khác nh? xml, sql db, …
+		?	M?c ?ích chính c?a LINQ là truy v?n c? s? d? li?u.
+		?	Có các lo?i LINQ sau:
+			+ LINQ cho Object: s? d?ng LINQ ??i v?i các ??i t??ng collection.
+			+ LINQ to SQL: map các table, view l?i v?i nhau thành các ??i t??ng. LINQ s? th?c hi?n truy v?n trên các ??i t??ng ?ó b?ng cách chuy?n ??i qua l?i gi?a các ??i t??ng và câu l?nh sql. Ngoài ra thì có th? thêm s?a xóa d? li?u trên các ??i t??ng ?ó. (nó ???c s? d?ng d??i tên EntityFramework ho?c Entity Framework Core).
+			+ LINQ to Entity: h? tr? nhi?u lo?i c? s? d? li?u.
+			+ LINQ to DataSets: s? k?t h?p gi?a LINQ và ADO.NET
+			+ LINQ to XML: truy v?n thông tin trong XML.
+		?	M?nh ?? from A in B trong ?ó A là tên ??i di?n cho ngu?n d? li?u B.
+		?	M?nh ?? select (m?t câu truy v?n ph?i k?t thúc b?ng m?nh ?? select ho?c group)
+			Ví d? var result = from Product in Products
+						   select Product
+			Câu l?nh truy v?n trên có ngh?a là ??i v?i m?i Product trong Products, d? li?u l?y ra là các Product ?ó.
+		?	M?nh ?? where: ?i?u ki?n ?? l?c ra các d? li?u c?n thi?t.
+		?	M?nh ?? OrderBy: s?p x?p k?t qu?, m?nh ?? này ???c vi?t sau m?nh ?? where.
+		?	M?nh ?? group … by: t?c là tr? v? theo t?ng nhóm.
+			Ví d?: l?y s?n ph?m có giá t? 400k ??n 500k
+			Var   result = from product in products
+							where product.Price >= 400 && product.Price <=500
+							group product by product.Price
+		?	M?nh ?? let: dùng thêm bi?n ?? truy v?n ví d? let count = gr.Count t?c là ??m s? l??ng
+		?	M?nh ?? join: k?t h?p 2 ngu?n d? li?u l?i v?i nhau. Ví d? m?i s?n ph?n ??u có Brand nó là id c?a nhãn hàng. V?y m?i s?n ph?m s? dùng Brand ?? l?y ???c thông tin chi ti?t c?a nhãn hàng. 
+			S? d?ng inner join
+			Var result =from product in products
+						join brand in brands on product.Brand equals brand.ID
+						select new {name = product.Name, brand = brand.Name}
+	Ienumerable
+		?	S? d?ng system.Collections
+		?	Duy?t ph?n t? theo chi?u ti?n lên.
+		?	Truy v?n t?t nh?t v?i các d? li?u trên b? nh? nh? list, array.
+		?	Truy v?n trên server và tr? v? d? li?u cho client. Client sau ?ó m?i ti?p t?c l?c d? li?u.
+	Iqueryable
+		?	S? d?ng system.Linq
+		- Cho phép t?o ra các câu l?nh truy v?n tùy ch?nh.
+		?	Duy?t ph?n t? theo chi?u ti?n lên.
+		?	Truy v?n t?t nh?t v?i các d? li?u n?m ngoài b? nh? nh? c? s? d? li?u.
+		?	Truy v?n và l?c d? li?u trên server và tr? v? d? li?u cho client
+	Hi?u nôm na thì Ienumerable và Iqueryable nó s? ???c s? d?ng ?? thao tác v?i c? s? d? li?u trong LINQ t? Collections ho?c t? CSDL.
+
+8, SPA
+	- SPA là 1 ?ng d?ng ??n trang ch? cho phép t?i 1 tài li?u web và sau ?ó c?p nh?t n?i dung c?a tài li?u ?ó thông qua các API
+	- Cho phép ?ng d?ng web ho?c trang web t??ng tác v?i ng??i dùng b?ng cách t? ??ng vi?t l?i trang web hi?n t?i v?i d? li?u m?i t? máy ch? web thay vì trình duy?t web t?i toàn b? trang m?i.
+	- Hi?u nôm na là ch? c?n 1 trang duy nh?t ?? x? lý cho t?t c? các tính n?ng.
+	  Ví d?: có 4 tính n?ng là login, changePassword, Account, Dashboard và 4 tính n?ng ??u ???c x? lý v?i 1 trang duy nh?t là admin.
+	- Khi s? d?ng SPA thì backend và fontend s? ???c tách bi?t nhau.
+	- khi ???c tách bi?t nh? th? thì s? ??y m?nh ???c vi?c x? lý t?i fontend, gi?m b?t gánh n?ng cho BackEnd.
+	c? th? là vi?c trao ??i gi?a backend và fontend th??ng qua các restful api, ??nh d?ng d? li?u th??ng là d?ng Json.
+	
+	Cách ho?t ??ng:
+	- Khi ng??i dùng truy c?p trang web, fontend là thành ph?n ti?p nh?n các request ch? không ph?i backend
+	- Sau khi ti?p nh?n các request, fontend s? bi?t ???c ng??i dùng mu?n s? d?ng ch?c n?ng nào, c?n d? li?u gì thì sau ?ó m?i g?i request t?i backend yêu c?u backend tr? v? d? li?u mong mu?n.
+	- Fontend nh?n d? li?u t? Backend (th??ng là Json) và d?a vào d? li?u này ?? render ra n?i dung trang web.
+	
+9, RESTFUL Api
+	- Restful Api là chu?n dùng ?? thi?t k? API cho các ?ng d?ng thu?n ti?n cho vi?c qu?n lý các resource.
+	- Rest dùng HTTP cho phép giao ti?p gi?a các máy, c? th? Rest s? g?i các HTTP nh? get, post, put, delete ??n 1 url ?? x? lý d? li?u.
+	- api là các quy t?c và c? ch? mà ? ?ó 1 ?ng d?ng hay m?t 1 thành ph?n s? t??ng tác v?i 1 ?ng d?ng ho?c 1 thành ph?n khác.
+	  th??ng thì api s? tr? v? ki?u d? li?u Json hay Xml
+	- Restful Api không s? d?ng sesion và cookie, nó s? d?ng m?t access_token v?i m?i request.
+	- Status code:
+		+ 200 OK: tr? v? thành công cho các ph??ng th?c nh? Get, Put, patch, ho?c Delete
+		+ 201 Created: tr? v? khi m?t resource v?a ???c t?o thành công.
+		+ 204 No Content: tr? v? khi resource xóa thành công
+		+ 304 Not Modified: client có th? s? d?ng d? li?u cache.
+		+ 400 Bad Request: Request không h?p l?.
+		+ 401 Unauthorized: Request c?n có auth (t?c là c?n có quy?n)
+		+ 403 Forbidden: b? t? ch?i không cho phép.
+		+ 404 Not Found: không tìm th?y resource t? URI
+	- Trong code Microservice s? d?ng các tích h?p Entity Framework Core và AutoMapper
+
+----------------------------------------------------------------------------------------------------
+Message broker (RabbitMQ)
+	- hay ???c g?i là interface engine là m?t module trung gian chuy?n message t? ng??i g?i t?i ng??i nh?n.
+	- là m?t mô hình ki?n trúc ?? ki?m tra, ?i?u h??ng message.
+	- Nhi?m v? chính: ti?p nh?n message t? các ?ng d?ng và th?c hi?n 1 thao tác nào ?ó.
+	- Message broker ???c s? d?ng trong project là RabbitMQ
+
+RabbitMQ
+	
+	- RabbitMQ là m?t message broker open-source
+	- cách s? d?ng: 
+		+ Add Volo.Abp.EventBus.RabbitMQ thêm [DependsOn(typeof(AbpEventBusRabbitMQModule))]
+		+ C?u hình trong t?p appsetting.json
+			{
+				"RabbitMQ":{
+					"EventBus":{
+						"ClientName": "MyClientName", // tên ?ng d?ng
+						"ExchangeName": "MyExchangeName" // tên dùng ?? trao ??i
+					}
+				}
+			}
+	
+Redis:
+	- Redis là mã ngu?n m?, s? d?ng nh? m?t database, cache, ho?c message broker
+	- Là c? s? d? li?u NoSql, l?u tr? d? li?u d?ng key - value.
+	- gi?m th?i gian truy v?n.
+	- s? d?ng redis trong vi?c cache d? li?u.
+	- Các chi?n thu?t Caching
+		Cache Aside
+		+ Khi ?ng d?ng ??c d? li?u t? database. Nó s? ki?m tra cache xem có d? li?u c?a mình không.
+			N?u có thì tr? v? d? li?u c?n truy v?n.
+			N?u không thì nó s? l?y d? li?u t? database.
+		Read Throughe
+		+ Khi ?ng d?ng ??c d? li?u t? database. Nó c?ng s? ki?u tra d? li?u có không.
+			N?u không có thì cach s? l?y d? li?u t? database thay vì t? ?ng d?ng.
+		Write Throughe
+		+ D? li?u ???c ghi vào cach và sau ?ó ???c l?u vào database. Khi ???c s? d?ng cùng ph??ng pháp Read 
+
+Docker
+	- Docker cung c?p các công c?, service ?? phát tri?n, th?c thi ch?y các ?ng d?ng v?i container.
+	- Hi?u ??n gi?n là nó cung c?p cách buiding, deploy, run các ?ng d?ng m?t cách d? dàng.
+	- Dockerfile: dùng ?? build các image trong container, dùng ?? t?o ra các Docker Image
+	- image: ch?a các th? vi?n, các file c?u hình, bi?n môi tr??ng ?? ch?y ?ng d?ng.
+	- Containers: là môi tr??ng mà ? ?ó l?p trình viên ??a các ph?n c?n thi?t ?? ?ng d?ng có th? ch?y ???c b?ng
+		cách ?óng g?i ?ng d?ng cùng v?i container.
+	- Docker Images: là 1 file b?t bi?n, không thay ??i, ch?a source code, các dependencies, tools và các file c?n thi?t cho 1 ?ng d?ng ch?y
+	- Docker Containers: là 1 run-time environment mà ? ?ó có th? ch?y ??c l?p 1 ?ng d?ng.
+	- M?t s? câu l?nh trong Docker
+		+ docker login: ??ng nh?p docker hub
+		+ docker logout: ??ng xu?t tài kho?n hi?n t?i.
+	- M?t s? câu l?nh hay dùng trong Docker image
+		+ docker pull (tên image): dùng ?? t?i image t? http c?a docker hub
+		+ docker search -d (tên image): dùng ?? tìm ki?m các image
+		+ docker images: li?t kê các images ?ã t?i v?
+		+ docker rmi -f (ImageName) xóa image ?ã t?i
+		+ docker images -help: tr? giúp liên quan các câu l?nh c?a docker images
+	- M?t s? câu l?nh hay dùng trong docker container
+		+ docker container ls -a: li?t kê các container
+		+ docker run -d ImageName: t?o container ch?y ng?m
+		+ docker run -d -p 81:80 ImageName: t?o container ch?y ng?m, ánh x? port 81 c?a host v?i port 80 c?a container
+		+ docker ps ho?c docker container ls: li?t kê các container ?ã t?o
+		+ docker exec -it ID_C?a container bash: th?c hi?n t??ng tác v?i container sau khi ???c t?o
+		+ docker stop ID_Container: t?m d?ng ho?t ??ng c?a container.
+		+ docker rm ID_Container: xóa container
+	- M?t s? l?nh hay dùng trong docker compose
+		+ docker-compose up: ch?y các service
+		+ docker-compose down: down các service
+		+ docker-compose build: build các service
+		+ docker-compose restart: restart l?i các service
+		+ docker-compose exec service_name bash: truy c?p vùng làm vi?c.
+	- Note: Image có th? t?n t?i mà không c?n Container. Trong khi Container ch?y thì c?n có Image t?n t?i.

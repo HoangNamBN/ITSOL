@@ -85,10 +85,10 @@ namespace IdentityService.Host
                 options.AutoEventSelectors.Add<IdentityUser>();
             });
 
-            context.Services.AddStackExchangeRedisCache(options =>
-            {
-                options.Configuration = configuration["Redis:Configuration"];
-            });
+            //context.Services.AddStackExchangeRedisCache(options =>
+            //{
+            //    options.Configuration = configuration["Redis:Configuration"];
+            //});
 
             Configure<AbpAuditingOptions>(options =>
             {
@@ -96,9 +96,9 @@ namespace IdentityService.Host
                 options.ApplicationName = "IdentityService";
             });
 
-            var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
-            context.Services.AddDataProtection()
-                .PersistKeysToStackExchangeRedis(redis, "MsDemo-DataProtection-Keys");
+            //var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
+            //context.Services.AddDataProtection()
+            //    .PersistKeysToStackExchangeRedis(redis, "MsDemo-DataProtection-Keys");
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

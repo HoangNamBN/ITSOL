@@ -14,6 +14,8 @@ namespace ProductManagement
             CreateMap<Customer, CustomerDto>();
             CreateMap<Class, ClassDto>();
             CreateMap<Student, StudentDto>().IgnoreAllNonExisting();
+
+            CreateMap<Product, ProductEto>().IgnoreAllNonExisting();
         }
     }
 

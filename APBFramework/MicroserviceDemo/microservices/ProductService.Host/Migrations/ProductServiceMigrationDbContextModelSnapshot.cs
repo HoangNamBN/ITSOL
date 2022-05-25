@@ -68,7 +68,7 @@ namespace ProductService.Host.Migrations
                     b.ToTable("PmClasses", (string)null);
                 });
 
-            modelBuilder.Entity("ProductManagement.Customer", b =>
+            modelBuilder.Entity("ProductManagement.Customers.Customer", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
