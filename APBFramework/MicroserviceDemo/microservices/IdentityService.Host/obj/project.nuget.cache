@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+nFFEXg8ToW5p0sH9igYanyXvtQ4feB0P8W5Ayxf9FtajQpCG/Kebq8QMpTk78vH/GukkN/XSy8oBhnZ/0EfxQ==",
+  "dgSpecHash": "VNDsBZJa7cIlBoq4+j+cgrFWu6BQ4HxhGVrqAgopmDX1z8By7Cy7cluEKiLF3WjDYo3ApPfeXfSgGyC5filo+A==",
   "success": true,
   "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\IdentityService.Host\\IdentityService.Host.csproj",
   "expectedPackageFiles": [

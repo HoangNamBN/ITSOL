@@ -18,5 +18,7 @@ namespace ProductManagement
         Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto input);
 
         Task DeleteAsync(Guid id);
+
+        Task ChangeStockCountAsync(Guid id, int newCount);
     }
 }

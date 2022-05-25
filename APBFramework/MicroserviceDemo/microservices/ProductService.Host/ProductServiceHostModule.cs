@@ -29,13 +29,14 @@ using Volo.Abp.Security.Claims;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
+using Volo.Abp.Domain.Entities.Events.Distributed;
 
 namespace ProductService.Host
 {
     [DependsOn(
         typeof(AbpAutofacModule),
         typeof(AbpAspNetCoreMvcModule),
-        //typeof(AbpEventBusRabbitMqModule),
+        typeof(AbpEventBusRabbitMqModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(AbpAuditLoggingEntityFrameworkCoreModule),
         typeof(AbpPermissionManagementEntityFrameworkCoreModule),
@@ -91,6 +92,12 @@ namespace ProductService.Host
             {
                 options.IsEnabledForGetRequests = true;
                 options.ApplicationName = "ProductService";
+            });
+
+            Configure<AbpDistributedEntityEventOptions>(options =>
+            {
+                options.AutoEventSelectors.Add<Product>();
+                options.EtoMappings.Add<Product, ProductEto>();
             });
 
             //var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);

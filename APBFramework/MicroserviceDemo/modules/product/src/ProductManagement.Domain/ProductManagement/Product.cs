@@ -50,6 +50,27 @@ namespace ProductManagement
             SetPrice(price);
             SetImageName(imageName);
             SetStockCountInternal(stockCount, triggerEvent: false);
+            // ChangeStockCount(stockCount);
+        }
+
+        public Product(Guid id,
+            [NotNull] string code,
+            [NotNull] string name,
+            float price = 0.0f,
+            string imageName = null)
+        {
+            Check.NotNullOrWhiteSpace(code, nameof(code));
+
+            if (code.Length >= ProductConsts.MaxCodeLength)
+            {
+                throw new ArgumentException($"Product code can not be longer than {ProductConsts.MaxCodeLength}");
+            }
+
+            Id = id;
+            Code = code;
+            SetName(Check.NotNullOrWhiteSpace(name, nameof(name)));
+            SetPrice(price);
+            SetImageName(imageName);
         }
 
         public Product SetName([NotNull] string name)
@@ -123,5 +144,18 @@ namespace ProductManagement
             StockCount = stockCount;
             return this;
         }
+
+        public void ChangeStockCount(int newCount)
+        {
+            StockCount = newCount;
+            AddDistributedEvent(
+                new StockCountChangedEto
+                {
+                    Id = Id,
+                    NewCount = newCount
+                }
+            );
+        }
+
     }
 }

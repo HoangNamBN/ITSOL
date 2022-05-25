@@ -38,6 +38,7 @@
           "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": "6.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.0",
           "MsDemo.Shared": "1.0.0",
+          "ProductManagement.Application.Contracts": "1.0.0",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Sinks.Elasticsearch": "8.1.0",
           "Serilog.Sinks.File": "4.1.0",
@@ -3785,6 +3786,30 @@
           "MsDemo.Shared.dll": {}
         }
       },
+      "ProductManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "ProductManagement.Domain.Shared": "1.0.0",
+          "Volo.Abp.Ddd.Application": "5.0.0"
+        },
+        "runtime": {
+          "ProductManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "ProductManagement.Application.Contracts.dll": {}
+        }
+      },
+      "ProductManagement.Domain.Shared/1.0.0": {
+        "dependencies": {
+          "Volo.Abp.Ddd.Domain": "5.0.0",
+          "Volo.Abp.Localization": "5.0.0"
+        },
+        "runtime": {
+          "ProductManagement.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "ProductManagement.Domain.Shared.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -7517,6 +7542,16 @@
       "hashPath": "volo.abp.virtualfilesystem.5.0.0.nupkg.sha512"
     },
     "MsDemo.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductManagement.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

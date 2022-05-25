@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
+using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Repositories;
+using Volo.Abp.EventBus.Distributed;
 
 namespace ProductManagement
 {
     //[Authorize(ProductManagementPermissions.Products.Default)]
-    public class ProductAppService : ApplicationService, IProductAppService
+    public class ProductAppService : ApplicationService, IProductAppService, ITransientDependency
     {
         private readonly ProductManager _productManager;
         private readonly IRepository<Product, Guid> _productRepository;
+        private readonly IDistributedEventBus _distributedEventBus;
 
-        public ProductAppService(ProductManager productManager, IRepository<Product, Guid> productRepository)
+        public ProductAppService(ProductManager productManager, IRepository<Product, Guid> productRepository, IDistributedEventBus distributedEventBus)
         {
             _productManager = productManager;
             _productRepository = productRepository;
+            _distributedEventBus = distributedEventBus;
         }
 
         public async Task<PagedResultDto<ProductDto>> GetListPagedAsync(PagedAndSortedResultRequestDto input)
@@ -96,6 +99,17 @@ namespace ProductManagement
             {
                 input.MaxResultCount = maxPageSize.Value;
             }
+        }
+
+        public async Task ChangeStockCountAsync(Guid id, int newCount)
+        {
+            await _distributedEventBus.PublishAsync(
+                new StockCountChangedEto
+                {
+                    Id = id,
+                    NewCount = newCount
+                }
+            );
         }
     }
 }
