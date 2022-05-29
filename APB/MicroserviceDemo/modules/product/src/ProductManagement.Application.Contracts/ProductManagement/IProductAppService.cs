@@ -19,6 +19,8 @@ namespace ProductManagement
 
         Task DeleteAsync(Guid id);
 
+        Task<ProductEto> UpdateChangeStockCountAsync(Guid id, CreateUpdateEto input);
+
         Task ChangeStockCountAsync(Guid id, int newCount);
     }
 }

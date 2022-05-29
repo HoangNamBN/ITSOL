@@ -47,7 +47,7 @@ namespace ProductManagement
         {
             var products = await _productRepository.GetListAsync();
 
-            var productList =  ObjectMapper.Map<List<Product>, List<ProductDto>>(products);
+            var productList = ObjectMapper.Map<List<Product>, List<ProductDto>>(products);
 
             return new ListResultDto<ProductDto>(productList);
         }
@@ -101,15 +101,41 @@ namespace ProductManagement
             }
         }
 
+        //public async Task ChangeStockCountAsync(Guid id, int newCount)
+        //{
+        //    await _distributedEventBus.PublishAsync(
+        //        new StockCountChangedEto
+        //        {
+        //            Id = id,
+        //            NewCount = newCount
+        //        }
+        //    );
+        //}
+
         public async Task ChangeStockCountAsync(Guid id, int newCount)
         {
-            await _distributedEventBus.PublishAsync(
-                new StockCountChangedEto
-                {
-                    Id = id,
-                    NewCount = newCount
-                }
-            );
+            await _distributedEventBus.PublishAsync(new StockCountChangedEto
+            {
+                Id = id,
+                NewCount = newCount
+            });
+        }
+
+        public async Task<ProductEto> UpdateChangeStockCountAsync(Guid id, CreateUpdateEto input)
+        {
+            var product = await _productRepository.GetAsync(id);
+
+            product.SetName(input.Name);
+            product.SetPrice(input.Price);
+            product.SetImageName(input.ImageName);
+
+            await _distributedEventBus.PublishAsync(new StockCountChangedEto
+            {
+                Id = id,
+                NewCount = input.StockCount
+            });
+
+            return ObjectMapper.Map<Product, ProductEto>(product);
         }
     }
 }

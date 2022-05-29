@@ -13068,11 +13068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
+      "projectUniqueName": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
       "projectName": "BloggingService.Host",
-      "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
+      "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
       "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-      "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\BloggingService.Host\\obj\\",
+      "outputPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\BloggingService.Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -13089,8 +13089,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
-              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
+            "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+              "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
             }
           }
         }

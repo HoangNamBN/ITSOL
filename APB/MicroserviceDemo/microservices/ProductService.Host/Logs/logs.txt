@@ -9492,3 +9492,920 @@ RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified end
    at System.Lazy`1.CreateValue()
    at Volo.Abp.RabbitMQ.ConnectionPool.Get(String connectionName)
    at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannelAsync()
+2022-05-25 23:42:50.222 +07:00 [INF] Starting IdentityService.Host.
+2022-05-25 23:42:58.977 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-25 23:42:59.193 +07:00 [INF] Loaded ABP modules:
+2022-05-25 23:42:59.194 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-25 23:42:59.194 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-25 23:42:59.194 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-25 23:42:59.194 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-25 23:42:59.194 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-25 23:42:59.194 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-25 23:42:59.194 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-25 23:42:59.194 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-25 23:42:59.194 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-25 23:42:59.194 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-25 23:42:59.194 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-25 23:42:59.194 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-25 23:42:59.194 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-25 23:42:59.194 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-25 23:42:59.194 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-25 23:42:59.194 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-25 23:42:59.194 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-25 23:42:59.194 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-25 23:42:59.194 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-25 23:42:59.194 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-25 23:42:59.195 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-25 23:42:59.195 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-25 23:42:59.195 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-25 23:42:59.195 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-25 23:42:59.195 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-25 23:42:59.195 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-25 23:42:59.195 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-25 23:42:59.195 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-25 23:42:59.195 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-25 23:42:59.195 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-25 23:42:59.195 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-25 23:42:59.195 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-25 23:42:59.195 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-25 23:42:59.195 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-25 23:42:59.196 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-25 23:42:59.196 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-25 23:42:59.196 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-25 23:42:59.196 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-25 23:42:59.196 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-25 23:42:59.196 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-25 23:42:59.196 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-25 23:42:59.196 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-25 23:42:59.196 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-25 23:42:59.196 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-25 23:42:59.196 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-25 23:42:59.196 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-25 23:42:59.197 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-25 23:43:19.425 +07:00 [INF] Initialized all ABP modules.
+2022-05-25 23:43:19.469 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-25 23:43:19.469 +07:00 [INF] Hosting environment: Development
+2022-05-25 23:43:19.469 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-25 23:43:19.549 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-25 23:43:19.853 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:24.197 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-25 23:43:24.245 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-25 23:43:24.316 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-25 23:43:24.328 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 73.882ms
+2022-05-25 23:43:24.330 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-25 23:43:24.957 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:43:24.987 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:43:25.104 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 5559.8351ms
+2022-05-25 23:43:25.111 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-25 23:43:25.117 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:25.125 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 13.9647ms
+2022-05-25 23:43:25.136 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-25 23:43:25.148 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:25.387 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 250.5568ms
+2022-05-25 23:43:25.409 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-25 23:43:25.409 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-25 23:43:25.415 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-25 23:43:25.420 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-25 23:43:25.422 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:25.422 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:25.422 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:25.438 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 8.7545ms
+2022-05-25 23:43:25.473 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-25 23:43:25.473 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-25 23:43:25.479 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 70.2300ms
+2022-05-25 23:43:25.485 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-25 23:43:25.502 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 93.0129ms
+2022-05-25 23:43:25.542 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-25 23:43:25.574 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 172.0945ms
+2022-05-25 23:43:25.626 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.7173ms
+2022-05-25 23:43:26.720 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-25 23:43:26.721 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:43:27.236 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 515.8890ms
+2022-05-25 23:45:11.777 +07:00 [INF] Request starting HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 103
+2022-05-25 23:45:11.778 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:45:11.796 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-25 23:45:11.829 +07:00 [INF] Route matched with {area = "productManagement", action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductDto] CreateAsync(ProductManagement.CreateProductDto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-25 23:45:13.459 +07:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "PM:000001",
+  "message": "An internal error occurred during your request!",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2022-05-25 23:45:13.460 +07:00 [WRN] A product with code string has already exists!
+ProductManagement.ProductCodeAlreadyExistsException: A product with code string has already exists!
+   at ProductManagement.ProductManager.CreateAsync(String code, String name, Single price, Int32 stockCount, String imageName) in D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Domain\ProductManagement\ProductManager.cs:line 29
+   at ProductManagement.ProductAppService.CreateAsync(CreateProductDto input) in D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Application\ProductManagement\ProductAppService.cs:line 65
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.ProceedByLoggingAsync(IAbpMethodInvocation invocation, IAuditingHelper auditingHelper, IAuditLogScope auditLogScope)
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1379(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2022-05-25 23:45:13.721 +07:00 [WRN] Code:PM:000001
+2022-05-25 23:45:13.721 +07:00 [WRN] Details:
+2022-05-25 23:45:13.754 +07:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2022-05-25 23:45:13.770 +07:00 [INF] Executed action ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi) in 1940.597ms
+2022-05-25 23:45:13.771 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-25 23:45:13.918 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:45:13.919 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:45:13.920 +07:00 [INF] Request finished HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 103 - 403 - application/json;+charset=utf-8 2143.4940ms
+2022-05-25 23:46:34.925 +07:00 [INF] Request starting HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 100
+2022-05-25 23:46:34.930 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:46:34.932 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-25 23:46:34.932 +07:00 [INF] Route matched with {area = "productManagement", action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductDto] CreateAsync(ProductManagement.CreateProductDto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-25 23:46:35.091 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:46:35.149 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:46:35.151 +07:00 [INF] Executing ObjectResult, writing value of type 'ProductManagement.ProductDto'.
+2022-05-25 23:46:35.166 +07:00 [INF] Executed action ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi) in 233.349ms
+2022-05-25 23:46:35.166 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-25 23:46:35.260 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:46:35.261 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:46:35.261 +07:00 [INF] Request finished HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 100 - 200 - application/json;+charset=utf-8 336.1304ms
+2022-05-25 23:47:51.577 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0
+2022-05-25 23:47:51.578 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:47:51.604 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-25 23:47:51.687 +07:00 [INF] Route matched with {area = "productManagement", action = "ChangeStockCount", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task ChangeStockCountAsync(System.Guid, Int32) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-25 23:47:51.728 +07:00 [INF] Executed action ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi) in 40.5111ms
+2022-05-25 23:47:51.728 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-25 23:47:51.744 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:47:51.745 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:47:51.746 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0 - 204 - - 169.3443ms
+2022-05-25 23:49:18.176 +07:00 [INF] Starting IdentityService.Host.
+2022-05-25 23:49:25.974 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-25 23:49:26.225 +07:00 [INF] Loaded ABP modules:
+2022-05-25 23:49:26.225 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-25 23:49:26.225 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-25 23:49:26.225 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-25 23:49:26.225 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-25 23:49:26.225 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-25 23:49:26.225 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-25 23:49:26.225 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-25 23:49:26.225 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-25 23:49:26.225 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-25 23:49:26.225 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-25 23:49:26.225 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-25 23:49:26.225 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-25 23:49:26.225 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-25 23:49:26.225 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-25 23:49:26.225 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-25 23:49:26.225 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-25 23:49:26.225 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-25 23:49:26.225 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-25 23:49:26.225 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-25 23:49:26.225 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-25 23:49:26.225 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-25 23:49:26.226 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-25 23:49:26.226 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-25 23:49:26.226 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-25 23:49:26.226 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-25 23:49:26.226 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-25 23:49:26.226 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-25 23:49:26.226 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-25 23:49:26.227 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-25 23:49:26.227 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-25 23:49:26.227 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-25 23:49:26.227 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-25 23:49:26.227 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-25 23:49:26.227 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-25 23:49:26.227 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-25 23:49:26.227 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-25 23:49:26.227 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-25 23:49:26.227 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-25 23:49:26.227 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-25 23:49:26.227 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-25 23:49:26.227 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-25 23:49:26.228 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-25 23:49:26.228 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-25 23:49:26.228 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-25 23:49:26.228 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-25 23:50:12.585 +07:00 [INF] Initialized all ABP modules.
+2022-05-25 23:50:12.633 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-25 23:50:12.634 +07:00 [INF] Hosting environment: Development
+2022-05-25 23:50:12.634 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-25 23:50:12.700 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-25 23:50:12.866 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:14.422 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-25 23:50:14.491 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-25 23:50:14.548 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-25 23:50:14.562 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 60.53ms
+2022-05-25 23:50:14.565 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-25 23:50:15.347 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:50:15.371 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-25 23:50:15.475 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 2778.0337ms
+2022-05-25 23:50:15.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-25 23:50:15.493 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:15.527 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 40.7351ms
+2022-05-25 23:50:15.544 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-25 23:50:15.553 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:15.795 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 250.8114ms
+2022-05-25 23:50:15.833 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-25 23:50:15.833 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-25 23:50:15.834 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-25 23:50:15.838 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-25 23:50:15.840 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:15.840 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:15.840 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:15.848 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 13.1710ms
+2022-05-25 23:50:15.900 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-25 23:50:15.933 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 99.4672ms
+2022-05-25 23:50:15.950 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-25 23:50:15.964 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-25 23:50:15.965 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-25 23:50:15.997 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 158.6479ms
+2022-05-25 23:50:16.042 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.7408ms
+2022-05-25 23:50:16.048 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 215.0931ms
+2022-05-25 23:50:17.072 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-25 23:50:17.073 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:17.619 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 546.9401ms
+2022-05-25 23:50:28.339 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0
+2022-05-25 23:50:28.342 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-25 23:50:28.357 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-25 23:50:28.388 +07:00 [INF] Route matched with {area = "productManagement", action = "ChangeStockCount", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task ChangeStockCountAsync(System.Guid, Int32) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-25 23:53:39.839 +07:00 [INF] Executed action ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi) in 191448.9159ms
+2022-05-25 23:53:39.839 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-25 23:54:00.442 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:79153374-8103-41f6-b147-7f35bf261e03
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:79153374-8103-41f6-b147-7f35bf261e03
+Error Number:-2,State:0,Class:11
+2022-05-25 23:54:00.454 +07:00 [WRN] Could not save the audit log object: 
+AUDIT LOG: [204: PUT    ] /api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 191480
+- Actions:
+  - ProductManagement.ProductAppService.ChangeStockCountAsync (60 ms.)
+    {"id":"37d80c19-9bea-67a5-5132-3a040e49c1c4","newCount":15}
+  - ProductManagement.ProductAppService.ChangeStockCountAsync (105829 ms.)
+    {"id":"37d80c19-9bea-67a5-5132-3a040e49c1c4","newCount":15}
+  - ProductManagement.ProductsController.ChangeStockCountAsync (191196 ms.)
+    {"id":"37d80c19-9bea-67a5-5132-3a040e49c1c4","newCount":15}
+
+2022-05-25 23:54:00.464 +07:00 [ERR] Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at Microsoft.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.SaveChangesAsync(CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.CompleteAsync(CancellationToken cancellationToken)
+   at Volo.Abp.AuditLogging.AuditingStore.SaveLogAsync(AuditLogInfo auditInfo)
+   at Volo.Abp.AuditLogging.AuditingStore.SaveAsync(AuditLogInfo auditInfo)
+ClientConnectionId:79153374-8103-41f6-b147-7f35bf261e03
+Error Number:-2,State:0,Class:11
+2022-05-25 23:54:00.499 +07:00 [ERR] ---------- Exception Data ----------
+HelpLink.ProdName = Microsoft SQL Server
+HelpLink.EvtSrc = MSSQLServer
+HelpLink.EvtID = -2
+HelpLink.BaseHelpUrl = https://go.microsoft.com/fwlink
+HelpLink.LinkId = 20476
+
+2022-05-25 23:54:00.500 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0 - 204 - - 212158.4520ms
+2022-05-26 00:26:51.672 +07:00 [INF] Starting IdentityService.Host.
+2022-05-26 00:26:59.313 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-26 00:26:59.562 +07:00 [INF] Loaded ABP modules:
+2022-05-26 00:26:59.563 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-26 00:26:59.563 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-26 00:26:59.563 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-26 00:26:59.563 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-26 00:26:59.563 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-26 00:26:59.563 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-26 00:26:59.563 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-26 00:26:59.563 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-26 00:26:59.563 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-26 00:26:59.563 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-26 00:26:59.563 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-26 00:26:59.563 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-26 00:26:59.563 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-26 00:26:59.563 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-26 00:26:59.563 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-26 00:26:59.563 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-26 00:26:59.563 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-26 00:26:59.563 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-26 00:26:59.563 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-26 00:26:59.563 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-26 00:26:59.564 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-26 00:26:59.564 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-26 00:26:59.564 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-26 00:26:59.564 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-26 00:26:59.564 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-26 00:26:59.564 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-26 00:26:59.564 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-26 00:26:59.564 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-26 00:26:59.564 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-26 00:26:59.564 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-26 00:26:59.564 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-26 00:26:59.564 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-26 00:26:59.565 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-26 00:26:59.565 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-26 00:26:59.565 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-26 00:26:59.565 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-26 00:26:59.565 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-26 00:26:59.565 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-26 00:26:59.565 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-26 00:26:59.565 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-26 00:26:59.565 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-26 00:26:59.565 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-26 00:26:59.565 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-26 00:26:59.565 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-26 00:27:11.661 +07:00 [INF] Initialized all ABP modules.
+2022-05-26 00:27:11.702 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-26 00:27:11.702 +07:00 [INF] Hosting environment: Development
+2022-05-26 00:27:11.702 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-26 00:27:11.767 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-26 00:27:11.976 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:13.793 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:27:13.843 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-26 00:27:13.917 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-26 00:27:13.938 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 79.308ms
+2022-05-26 00:27:13.941 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:27:15.276 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:27:15.373 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:27:15.446 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 3681.4683ms
+2022-05-26 00:27:15.463 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-26 00:27:15.471 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:15.480 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 17.4945ms
+2022-05-26 00:27:15.491 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-26 00:27:15.503 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:15.772 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 281.1333ms
+2022-05-26 00:27:15.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-26 00:27:15.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-26 00:27:15.792 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:15.792 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:15.794 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-26 00:27:15.794 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:15.826 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-26 00:27:15.830 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 40.2407ms
+2022-05-26 00:27:15.836 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-26 00:27:15.847 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-26 00:27:15.894 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 100.7668ms
+2022-05-26 00:27:15.948 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 157.7044ms
+2022-05-26 00:27:15.970 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-26 00:27:15.977 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 6.4438ms
+2022-05-26 00:27:16.264 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-26 00:27:16.338 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.5145ms
+2022-05-26 00:27:17.845 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-26 00:27:17.846 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:27:18.197 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 352.6862ms
+2022-05-26 00:28:07.085 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0
+2022-05-26 00:28:07.095 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:28:07.118 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-26 00:28:07.143 +07:00 [INF] Route matched with {area = "productManagement", action = "ChangeStockCount", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task ChangeStockCountAsync(System.Guid, Int32) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-26 00:30:57.550 +07:00 [INF] Executed action ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi) in 170406.8505ms
+2022-05-26 00:30:57.550 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.ChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-26 00:30:57.567 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:30:57.583 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:30:57.584 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:44344/api/productManagement/products/update/37d80c19-9bea-67a5-5132-3a040e49c1c4?newCount=15 - 0 - 204 - - 170498.2825ms
+2022-05-26 00:44:11.396 +07:00 [INF] Starting IdentityService.Host.
+2022-05-26 00:44:17.547 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-26 00:44:17.794 +07:00 [INF] Loaded ABP modules:
+2022-05-26 00:44:17.795 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-26 00:44:17.795 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-26 00:44:17.795 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-26 00:44:17.795 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-26 00:44:17.795 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-26 00:44:17.795 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-26 00:44:17.795 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-26 00:44:17.795 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-26 00:44:17.795 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-26 00:44:17.795 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-26 00:44:17.795 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-26 00:44:17.795 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-26 00:44:17.795 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-26 00:44:17.795 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-26 00:44:17.795 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-26 00:44:17.795 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-26 00:44:17.795 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-26 00:44:17.795 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-26 00:44:17.795 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-26 00:44:17.795 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-26 00:44:17.795 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-26 00:44:17.795 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-26 00:44:17.795 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-26 00:44:17.796 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-26 00:44:17.796 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-26 00:44:17.796 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-26 00:44:17.796 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-26 00:44:17.796 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-26 00:44:17.796 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-26 00:44:17.796 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-26 00:44:17.796 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-26 00:44:17.796 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-26 00:44:17.796 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-26 00:44:17.797 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-26 00:44:17.797 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-26 00:44:17.797 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-26 00:44:17.797 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-26 00:44:17.797 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-26 00:44:17.797 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-26 00:44:17.797 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-26 00:44:17.797 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-26 00:44:17.797 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-26 00:44:26.843 +07:00 [INF] Initialized all ABP modules.
+2022-05-26 00:44:26.897 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-26 00:44:26.898 +07:00 [INF] Hosting environment: Development
+2022-05-26 00:44:26.898 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-26 00:44:27.001 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-26 00:44:27.256 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:28.759 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:44:28.852 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-26 00:44:28.924 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-26 00:44:28.939 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 74.8826ms
+2022-05-26 00:44:28.941 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:44:29.761 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:44:29.855 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:44:29.917 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 2923.6443ms
+2022-05-26 00:44:29.935 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-26 00:44:29.942 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:29.951 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 16.2065ms
+2022-05-26 00:44:29.965 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-26 00:44:29.978 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:30.244 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 279.5511ms
+2022-05-26 00:44:30.255 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-26 00:44:30.256 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:30.258 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-26 00:44:30.258 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-26 00:44:30.259 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:30.259 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:30.292 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-26 00:44:30.292 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-26 00:44:30.298 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 42.9531ms
+2022-05-26 00:44:30.301 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-26 00:44:30.316 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 57.2058ms
+2022-05-26 00:44:30.377 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 118.7413ms
+2022-05-26 00:44:30.489 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-26 00:44:30.495 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.8229ms
+2022-05-26 00:44:30.577 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-26 00:44:30.651 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.2174ms
+2022-05-26 00:44:32.306 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-26 00:44:32.307 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:44:32.708 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 402.1199ms
+2022-05-26 00:59:27.356 +07:00 [INF] Starting IdentityService.Host.
+2022-05-26 00:59:34.146 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-26 00:59:34.369 +07:00 [INF] Loaded ABP modules:
+2022-05-26 00:59:34.369 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-26 00:59:34.369 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-26 00:59:34.369 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-26 00:59:34.369 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-26 00:59:34.369 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-26 00:59:34.369 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-26 00:59:34.369 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-26 00:59:34.369 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-26 00:59:34.369 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-26 00:59:34.369 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-26 00:59:34.369 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-26 00:59:34.370 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-26 00:59:34.370 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-26 00:59:34.370 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-26 00:59:34.370 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-26 00:59:34.370 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-26 00:59:34.370 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-26 00:59:34.370 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-26 00:59:34.370 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-26 00:59:34.370 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-26 00:59:34.370 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-26 00:59:34.370 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-26 00:59:34.370 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-26 00:59:34.370 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-26 00:59:34.370 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-26 00:59:34.371 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-26 00:59:34.371 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-26 00:59:34.371 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-26 00:59:34.371 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-26 00:59:34.371 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-26 00:59:34.371 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-26 00:59:34.371 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-26 00:59:34.371 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-26 00:59:34.371 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-26 00:59:42.541 +07:00 [INF] Initialized all ABP modules.
+2022-05-26 00:59:42.581 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-26 00:59:42.581 +07:00 [INF] Hosting environment: Development
+2022-05-26 00:59:42.581 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-26 00:59:42.632 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-26 00:59:42.803 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:44.315 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:59:44.363 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-26 00:59:44.421 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-26 00:59:44.432 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 59.4122ms
+2022-05-26 00:59:44.434 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 00:59:45.149 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:59:45.294 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 00:59:45.358 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-26 00:59:45.363 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:45.398 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-26 00:59:45.411 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:45.419 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 59.4013ms
+2022-05-26 00:59:45.419 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 2786.4703ms
+2022-05-26 00:59:45.759 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 360.5147ms
+2022-05-26 00:59:45.779 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-26 00:59:45.780 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-26 00:59:45.780 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-26 00:59:45.784 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-26 00:59:45.785 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:45.785 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:45.786 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:45.792 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 11.5611ms
+2022-05-26 00:59:45.824 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-26 00:59:45.824 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-26 00:59:45.853 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-26 00:59:45.868 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 84.4796ms
+2022-05-26 00:59:45.883 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 103.0560ms
+2022-05-26 00:59:45.931 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-26 00:59:45.937 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 157.8610ms
+2022-05-26 00:59:46.027 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.1706ms
+2022-05-26 00:59:47.310 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-26 00:59:47.312 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 00:59:47.781 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 470.8005ms
+2022-05-26 01:00:35.636 +07:00 [INF] Request starting HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 103
+2022-05-26 01:00:35.644 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:00:35.653 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-26 01:00:35.685 +07:00 [INF] Route matched with {area = "productManagement", action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductDto] CreateAsync(ProductManagement.CreateProductDto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-26 01:00:36.208 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:00:36.228 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:00:36.239 +07:00 [INF] Executing ObjectResult, writing value of type 'ProductManagement.ProductDto'.
+2022-05-26 01:00:36.254 +07:00 [INF] Executed action ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi) in 568.8966ms
+2022-05-26 01:00:36.255 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.CreateAsync (ProductManagement.HttpApi)'
+2022-05-26 01:00:36.272 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:00:36.296 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:00:36.297 +07:00 [INF] Request finished HTTP/2 POST https://localhost:44344/api/productManagement/products application/json 103 - 200 - application/json;+charset=utf-8 661.4788ms
+2022-05-26 01:01:25.296 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/938eec3d-f966-330a-4e32-3a040e8d85ed application/json 86
+2022-05-26 01:01:25.299 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:01:25.301 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.UpdateAsync (ProductManagement.HttpApi)'
+2022-05-26 01:01:25.307 +07:00 [INF] Route matched with {area = "productManagement", action = "Update", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductDto] UpdateAsync(System.Guid, ProductManagement.UpdateProductDto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-26 01:01:25.778 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:01:25.810 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:01:25.811 +07:00 [INF] Executing ObjectResult, writing value of type 'ProductManagement.ProductDto'.
+2022-05-26 01:01:25.812 +07:00 [INF] Executed action ProductManagement.ProductsController.UpdateAsync (ProductManagement.HttpApi) in 505.4431ms
+2022-05-26 01:01:25.813 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.UpdateAsync (ProductManagement.HttpApi)'
+2022-05-26 01:01:25.826 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:01:25.867 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:01:25.868 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:44344/api/productManagement/products/938eec3d-f966-330a-4e32-3a040e8d85ed application/json 86 - 200 - application/json;+charset=utf-8 572.1549ms
+2022-05-26 01:11:05.667 +07:00 [INF] Starting IdentityService.Host.
+2022-05-26 01:11:13.342 +07:00 [INF] User profile is available. Using 'C:\Users\NamBN\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-26 01:11:13.563 +07:00 [INF] Loaded ABP modules:
+2022-05-26 01:11:13.564 +07:00 [INF] - ProductService.Host.ProductServiceHostModule
+2022-05-26 01:11:13.564 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-05-26 01:11:13.564 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-05-26 01:11:13.564 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-05-26 01:11:13.564 +07:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-05-26 01:11:13.564 +07:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-05-26 01:11:13.564 +07:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-05-26 01:11:13.564 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-05-26 01:11:13.564 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-05-26 01:11:13.564 +07:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-05-26 01:11:13.564 +07:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-05-26 01:11:13.564 +07:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-05-26 01:11:13.564 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-05-26 01:11:13.564 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-05-26 01:11:13.564 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-05-26 01:11:13.564 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-05-26 01:11:13.564 +07:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-05-26 01:11:13.564 +07:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-05-26 01:11:13.564 +07:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-05-26 01:11:13.565 +07:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-05-26 01:11:13.565 +07:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-05-26 01:11:13.565 +07:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-05-26 01:11:13.565 +07:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-05-26 01:11:13.565 +07:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-05-26 01:11:13.565 +07:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-05-26 01:11:13.565 +07:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-05-26 01:11:13.565 +07:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-05-26 01:11:13.565 +07:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-05-26 01:11:13.565 +07:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-05-26 01:11:13.566 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-05-26 01:11:13.566 +07:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-05-26 01:11:13.566 +07:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-05-26 01:11:13.566 +07:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-05-26 01:11:13.566 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2022-05-26 01:11:13.566 +07:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-05-26 01:11:13.566 +07:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-05-26 01:11:13.566 +07:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2022-05-26 01:11:13.567 +07:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-05-26 01:11:13.567 +07:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-05-26 01:11:13.567 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-05-26 01:11:13.567 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-05-26 01:11:27.212 +07:00 [INF] Initialized all ABP modules.
+2022-05-26 01:11:27.248 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-26 01:11:27.248 +07:00 [INF] Hosting environment: Development
+2022-05-26 01:11:27.248 +07:00 [INF] Content root path: D:\ITSOL\APB\MicroserviceDemo\microservices\ProductService.Host
+2022-05-26 01:11:27.322 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2022-05-26 01:11:27.511 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:29.472 +07:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 01:11:29.529 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2022-05-26 01:11:29.588 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-05-26 01:11:29.596 +07:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 60.0407ms
+2022-05-26 01:11:29.598 +07:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2022-05-26 01:11:30.284 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:11:30.376 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:11:30.431 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 3111.0562ms
+2022-05-26 01:11:30.438 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2022-05-26 01:11:30.444 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:30.459 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 20.1342ms
+2022-05-26 01:11:30.465 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2022-05-26 01:11:30.476 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:30.705 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 239.8108ms
+2022-05-26 01:11:30.725 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2022-05-26 01:11:30.725 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2022-05-26 01:11:30.725 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2022-05-26 01:11:30.726 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2022-05-26 01:11:30.727 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:30.727 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:30.727 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:30.734 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 7.6849ms
+2022-05-26 01:11:30.786 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-26 01:11:30.786 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-26 01:11:30.791 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 66.4166ms
+2022-05-26 01:11:30.793 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-26 01:11:30.815 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 88.9373ms
+2022-05-26 01:11:30.867 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 141.9296ms
+2022-05-26 01:11:30.869 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_vs/browserLink - -
+2022-05-26 01:11:30.939 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.1199ms
+2022-05-26 01:11:31.669 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2022-05-26 01:11:31.670 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:11:32.065 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 396.0389ms
+2022-05-26 01:12:20.665 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/updateEto/37d80c19-9bea-67a5-5132-3a040e49c1c4 application/json 105
+2022-05-26 01:12:20.723 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:12:20.730 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.UpdateChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-26 01:12:20.752 +07:00 [INF] Route matched with {area = "productManagement", action = "UpdateChangeStockCount", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductEto] UpdateChangeStockCountAsync(System.Guid, ProductManagement.CreateUpdateEto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).
+2022-05-26 01:13:13.484 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:13:13.514 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:13:13.527 +07:00 [INF] Executing ObjectResult, writing value of type 'ProductManagement.ProductEto'.
+2022-05-26 01:13:13.533 +07:00 [INF] Executed action ProductManagement.ProductsController.UpdateChangeStockCountAsync (ProductManagement.HttpApi) in 52781.7266ms
+2022-05-26 01:13:13.534 +07:00 [INF] Executed endpoint 'ProductManagement.ProductsController.UpdateChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-26 01:13:13.551 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:13:13.568 +07:00 [DBG] Added 0 entity changes to the current audit log
+2022-05-26 01:13:13.568 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:44344/api/productManagement/products/updateEto/37d80c19-9bea-67a5-5132-3a040e49c1c4 application/json 105 - 200 - application/json;+charset=utf-8 52903.5487ms
+2022-05-26 01:17:20.008 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:44344/api/productManagement/products/updateEto/37d80c19-9bea-67a5-5132-3a040e49c1c4 application/json 105
+2022-05-26 01:17:20.013 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-05-26 01:17:20.016 +07:00 [INF] Executing endpoint 'ProductManagement.ProductsController.UpdateChangeStockCountAsync (ProductManagement.HttpApi)'
+2022-05-26 01:17:20.017 +07:00 [INF] Route matched with {area = "productManagement", action = "UpdateChangeStockCount", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[ProductManagement.ProductEto] UpdateChangeStockCountAsync(System.Guid, ProductManagement.CreateUpdateEto) on controller ProductManagement.ProductsController (ProductManagement.HttpApi).

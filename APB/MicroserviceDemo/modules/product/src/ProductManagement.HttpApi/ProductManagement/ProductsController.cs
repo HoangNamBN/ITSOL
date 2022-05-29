@@ -65,5 +65,13 @@ namespace ProductManagement
         {
             return _productAppService.ChangeStockCountAsync(id, newCount);
         }
+
+
+        [HttpPut]
+        [Route("updateEto/{id}")]
+        public Task<ProductEto> UpdateChangeStockCountAsync(Guid id, CreateUpdateEto input)
+        {
+            return _productAppService.UpdateChangeStockCountAsync(id, input);
+        }
     }
 }

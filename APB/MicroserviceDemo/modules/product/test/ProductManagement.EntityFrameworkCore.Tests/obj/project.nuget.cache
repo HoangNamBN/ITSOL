@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eQJfUWvzePamJJc4AupUhXQ5eBfiZixDA05xd4tJpLtugKdbUYtCmE6ouPOXUEFVQx7AfmUgF3M3r0Jf63Pwjg==",
+  "dgSpecHash": "9IhRvdkadOf0zvXNQ6sCj1DAKcV+s+Ul/lBXc06zgwlImwLeMkMTKZU4tyFaPPCy6Y+1h2Y1w/JB4wQf0BY/kQ==",
   "success": true,
-  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
+  "projectFilePath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

@@ -24,16 +24,11 @@ namespace ProductManagement
 
         public string ImageName { get; private set; }
 
-        private Product()
-        {
-            //Default constructor is needed for ORMs.
-        }
-
-        internal Product(
+        public Product(
             Guid id,
-            [NotNull] string code, 
-            [NotNull] string name, 
-            float price = 0.0f, 
+            [NotNull] string code,
+            [NotNull] string name,
+            float price = 0.0f,
             int stockCount = 0,
             string imageName = null)
         {
@@ -50,27 +45,6 @@ namespace ProductManagement
             SetPrice(price);
             SetImageName(imageName);
             SetStockCountInternal(stockCount, triggerEvent: false);
-            // ChangeStockCount(stockCount);
-        }
-
-        public Product(Guid id,
-            [NotNull] string code,
-            [NotNull] string name,
-            float price = 0.0f,
-            string imageName = null)
-        {
-            Check.NotNullOrWhiteSpace(code, nameof(code));
-
-            if (code.Length >= ProductConsts.MaxCodeLength)
-            {
-                throw new ArgumentException($"Product code can not be longer than {ProductConsts.MaxCodeLength}");
-            }
-
-            Id = id;
-            Code = code;
-            SetName(Check.NotNullOrWhiteSpace(name, nameof(name)));
-            SetPrice(price);
-            SetImageName(imageName);
         }
 
         public Product SetName([NotNull] string name)

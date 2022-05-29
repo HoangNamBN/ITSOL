@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj": {}
+    "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj": {}
   },
   "projects": {
-    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj": {
+    "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
         "projectName": "TenantManagementService.Host",
-        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
+        "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\TenantManagementService.Host.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\obj\\",
+        "outputPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\TenantManagementService.Host\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
-                "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
+              "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+                "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+    "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+        "projectUniqueName": "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
         "projectName": "MsDemo.Shared",
-        "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+        "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
         "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-        "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
+        "outputPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\shared\\MsDemo.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",

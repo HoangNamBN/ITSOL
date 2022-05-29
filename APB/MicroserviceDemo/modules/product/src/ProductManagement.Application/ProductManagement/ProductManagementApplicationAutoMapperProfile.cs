@@ -14,7 +14,6 @@ namespace ProductManagement
             CreateMap<Customer, CustomerDto>();
             CreateMap<Class, ClassDto>();
             CreateMap<Student, StudentDto>().IgnoreAllNonExisting();
-
             CreateMap<Product, ProductEto>().IgnoreAllNonExisting();
         }
     }
@@ -28,9 +27,9 @@ namespace ProductManagement
             var sourceType = typeof(TSource);
             var destinationType = typeof(TDestination).GetProperties(flags);
 
-            foreach(var property in destinationType)
+            foreach (var property in destinationType)
             {
-                if(sourceType.GetProperty(property.Name, flags) == null)
+                if (sourceType.GetProperty(property.Name, flags) == null)
                 {
                     expression.ForMember(property.Name, opt => opt.Ignore());
                 }

@@ -9254,11 +9254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
+      "projectUniqueName": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
       "projectName": "ProductManagement.EntityFrameworkCore.Tests",
-      "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
+      "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\ProductManagement.EntityFrameworkCore.Tests.csproj",
       "packagesPath": "C:\\Users\\NamBN\\.nuget\\packages\\",
-      "outputPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\obj\\",
+      "outputPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.EntityFrameworkCore.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NamBN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9275,11 +9275,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.EntityFrameworkCore\\ProductManagement.EntityFrameworkCore.csproj": {
-              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.EntityFrameworkCore\\ProductManagement.EntityFrameworkCore.csproj"
+            "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.EntityFrameworkCore\\ProductManagement.EntityFrameworkCore.csproj": {
+              "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.EntityFrameworkCore\\ProductManagement.EntityFrameworkCore.csproj"
             },
-            "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.TestBase\\ProductManagement.TestBase.csproj": {
-              "projectPath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.TestBase\\ProductManagement.TestBase.csproj"
+            "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.TestBase\\ProductManagement.TestBase.csproj": {
+              "projectPath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\test\\ProductManagement.TestBase\\ProductManagement.TestBase.csproj"
             }
           }
         }

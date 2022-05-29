@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cvjhTPdkRGheYlpr6bIfQWV4unhla6+XHEH63EFFDdOlVXCvN7qYUaHQcUQhz/hg+JnrPGp9okeNKRdLA+NrQA==",
+  "dgSpecHash": "A9ilcj5RGzjZEOUyp2bEiJ8zKsqDlMTxvCzKOeL9qkP7fVU3ccFsUyq5VzcU/fiwyCPqx9sxPNGXFYuwlvO52g==",
   "success": true,
-  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\applications\\AuthServer.Host\\AuthServer.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APB\\MicroserviceDemo\\applications\\AuthServer.Host\\AuthServer.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",

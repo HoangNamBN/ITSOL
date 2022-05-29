@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zav+SVsMgvkWThzlTPbeG70StWGsyKnpLa0TTCFk4o0UadpjTZnBJ22NvnfnlofkuLQjBTO3+R4ACkHT4mZsug==",
+  "dgSpecHash": "TUb9yskRfJdb5YI0RiZsnce6CoaulsRUauO3TBPO5UVaJroJeeHI3n5h7FujnqctqmzXKXLN44qWqA4ZNFam5g==",
   "success": true,
-  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
+  "projectFilePath": "D:\\ITSOL\\APB\\MicroserviceDemo\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\jetbrains.annotations\\2021.2.0\\jetbrains.annotations.2021.2.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",

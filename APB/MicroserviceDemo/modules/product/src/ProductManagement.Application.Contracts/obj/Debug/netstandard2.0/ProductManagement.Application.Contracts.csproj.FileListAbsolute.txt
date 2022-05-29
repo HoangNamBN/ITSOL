@@ -37,3 +37,16 @@ D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.App
 D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CopyComplete
 D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
 D:\ITSOL\APBFramework\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.deps.json
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfo.cs
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CopyComplete
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
+D:\ITSOL\APB\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb

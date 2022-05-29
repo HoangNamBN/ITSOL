@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "957Md+97/+3GktkpGNFhBzy1tio1JZ8VM+yhCvW8DMkqEUVT9WhEu1IslXRfGpkBJhyKn2QwrkX+ljK1JeAZfw==",
+  "dgSpecHash": "BEKzbmOjJxPPnephUgsxNjyBHaXJPSUxHmeFR8TmHzJ3QwflBVTiYQqNLlGXJzUV9tfdTg8f2mKKHjiJQXoK6Q==",
   "success": true,
-  "projectFilePath": "D:\\ITSOL\\APBFramework\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
+  "projectFilePath": "D:\\ITSOL\\APB\\MicroserviceDemo\\microservices\\BloggingService.Host\\BloggingService.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\NamBN\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
